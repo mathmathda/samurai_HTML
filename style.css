@@ -1,0 +1,560 @@
+/* PC スマホ共通スタイル */
+body {
+  font:12px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+  line-height:1.5;
+  background:#fff;
+  -webkit-text-size-adjust:100%;
+}
+
+/*pタグ（段落）の文字を指定するにする */
+p {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  color: dimgray;
+}
+
+
+
+/* ***********
+PC用のスタイル      
+************ */
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+    text-align: right;
+    font-size: 14px;
+    padding-top: 15px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc > a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+  #nav-pc > a:active {
+    color: #0d0d0d;
+  }
+
+   /* スマホ用ナビを非表示 */
+  #menu-sp {
+     display: none;
+   }
+  }
+
+/* ***********
+スマホ用のスタイル      
+************ */
+@media screen and (max-width: 767px) {
+
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    float: right;
+    padding: 0;
+  }
+
+  /* スマホ用ナビゲーションの表示切替 */
+  /* 初期状態、レイアウトと非表示設定 */
+  #nav-sp {
+    background-color: #28a99e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  /* ×ボタン */
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   }
+ 
+   /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+     margin: 80px 0 30px 20px;
+   }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-sp > a {
+      display: block;
+    }
+  /* リンクの背景をdisply:block でたて並びにしている*/
+  
+  #nav-sp > a:link {
+    color: #ffffff;
+  }
+  
+  #nav-sp > a:visited {
+    color: #ffffff;
+  }
+  
+  #nav-sp > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  #nav-sp > a:active {
+    color: #ffffff;
+  }
+  
+  #nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url("images/samuraiimages/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  
+  #sns {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  #sns > a {
+    margin-right: 30px;
+  } 
+
+  /* メインビジュアル */
+  #main-visual {
+    position: relative;
+    height: 470px;
+    width: 100%;
+    overflow: hidden;
+  }
+  #main-visual > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4fb9af;
+    color: white;
+    border-radius: 0 0 476px 0;
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    z-index: 11;
+  }
+  #main-visual > div > h1 {
+    font-size: 28px;
+    margin: 90px 0 0 0;
+  }
+
+  #main-visual > div > p {
+    margin: 0;
+  }
+
+  #main-visual > img {
+    width: 100%;
+    border-radius: 476px 0 0 0;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  /* 見出し */
+  h2::after {
+    content: url("images/line.png");
+    margin-left: 10px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+  }
+
+   /* ミッション */
+   #whymath {
+     margin: 20px;
+   }
+ 
+   #whymath-photo {
+     width: 100%;
+   }
+ 
+   #whymathhelps {
+     width: 100%;
+   } 
+}
+
+
+
+
+
+ 
+
+
+/* ***********
+メインビジュアル      
+************ */
+
+#main-visual {
+  position: relative;
+  height: 400px;
+}
+
+#main-message {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #4fb9af;
+  color: #fff;
+  border-radius: 0 0 476px 0;
+  max-width: 500px;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 100px 0 0 50px;
+  color: dimgray;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 20px 0 0 50px;
+  color: dimgray;
+}
+
+
+/* ***********
+Why Math      
+************ */
+
+/* 見出し */
+h2.index-h2 {
+  margin:100px 0 0 0;
+  font-size: 80x;
+  color: dimgray;
+}
+
+h2.index-h2::after {
+  content:url("images/samuraiimages/line.png");
+  margin: left 10px;
+}
+/* 横棒は練習のために着けたが、いらない */
+
+h3 {
+  margin: 20px 0 0 0;
+  font-size: 25px;
+  color: dimgray;
+}
+
+p.whymath-p {
+  font-size: 15px;
+  color: dimgray;
+}
+
+
+/* 全体のボックス */
+#whymath {
+  margin: 100px auto 80px auto;
+  width:100%
+}
+/* 上記section　marginの最初の値を変えても影響ない。上のマージンが100なのでは？なぜ？ */
+
+#whymath-flex {
+  width: 100%;
+  display: flex;
+}
+
+#whymath-flex >div {
+  width: 50%;
+  margin: 20px 20px 20px 20px;
+}
+
+#whymat-photo {
+  width: 100%;
+}
+
+#whymathhelps {
+  margin: top 50px;
+}
+
+/* ***********
+Topics      
+************ */
+
+
+/* 全体のボックス */
+#topics {
+  background-color: #fafafa;
+  width:100%;
+  margin: 80px 0 80px 0;
+  padding: 10px 40px 0 40px;  
+}
+
+#topics >div {
+  margin-top: 40px;
+  display: flex;
+}
+/* #topics>div　とは、topicsセクションの真下のdiv
+（いくつもdivがあるが、直下レベルのdiv)を左右に並べるということか？*/
+/* topic>divにwidth 50%　はいらないのか？左右どちらかに偏って、真ん中で割れないのでは？ */
+
+/* 左のカラム */
+#topics-left {
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+/* 右のカラム */
+#topics-right {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+/* 画像＋説明の枠 */
+#topics-left >div {
+  position: relative;
+  height: 480px;
+  margin-right: 20px;
+}
+
+#topics-right >div {
+  position: relative;
+  height: 480px;
+  margin-right: 20px;
+}
+
+.onethird-photo {
+  width: 100%;
+}
+
+/* 説明文の枠 */
+.onethird-explain {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 140px;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+
+}
+/* positionのleftが０だけど、
+画像を見ると、白ボックス部分は、親要素の一番左側より内側に配置されている？ */
+
+/* 青い文字部分 */
+.onethird-explain > span {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0%;
+}
+
+.onethird-explain >h3 {
+  margin-bottom: 20px;
+}
+
+.onethird-photo >p {
+  margin: 0;
+}
+
+/* 上のdivの下の方に、下のdivが重なってしまう？ */
+
+/* ***********
+About US      
+************ */
+#aboutus {
+  margin: 80px auto 80px auto;
+}
+
+/* 3つの組織文化と画像を入れる枠 */
+#aboutus > div {
+  display: flex;
+}
+
+/* 画像 */
+.culture-img {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.culture-img2 {
+  margin-top: 50px;
+  width: 100%;
+}
+
+  /* 3つの組織文化の表 */
+  .culture-table {
+    max-width: 500px;
+    margin-right: 50px;
+  }
+
+  /* 番号 */
+  .culture-num {
+    font-size: 80px;
+    color: #2710d5;
+    margin: 0 20px 0 0;
+  }
+  
+  /* 組織文化英語 */
+  .culture-en {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+  }
+  
+  /* 組織文化日本語 */
+  .culture-jp {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* 説明文 */
+  .culture-description {
+    margin: 0;
+  }
+
+/* ***********
+CONTACT  HTML/CSS  10章、11章
+************ */
+/* お問い合わせ */
+#contact {
+  margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+
+  /* 個人情報の取り扱い */
+  details {
+    width: 700px;
+  }
+  details > div {
+    background-color: #fafafa;
+    padding: 20px;
+  } 
+  details > div > span {
+    font-weight: bold;
+  }
+
+
+  /* ***********
+FOOTER    
+************ */
+
+footer {
+    background-color: #4fb9af;
+    text-align: center;
+    padding: 80px 80px 30px 80px;
+  }
+  
+
+#footer-logo {
+    margin-bottom: 30px;
+  }
+
+#sns-footer {
+  text-align: left;
+  width: 100%;
+}
+
+#sns-footer > a {
+  margin-right: 30px;
+}
+
+#copyright {
+  color: #ffffff;
+  float: right;
+}
+
+
+/* ***************質問************************ */
+
+/* 余白の作り方がわからなーい？*/
+#blank-space {
+  height: 30px;
+}

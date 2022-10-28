@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MATHDA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta要素とは、ページを記述する文字コードや、コンテンツに関する著者や期限やキーワードといった、メタデータ（データのためのデータ）を表現するHTML要素-->
+    <!-- viewportとはPCやスマホでウェブページの画面をどのように表示させるかという設定 、device-width＝幅は画面いっぱい、initial-scale=1.0等倍を指定して拡大縮小を行わない-->
+    <meta name="description" content="Mathda provides one-hour lectures for many math topics. Many of the topics involves high-school math but I aim to explain them in ways that 10-year olds would understand.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo"><img src="images/banners/MATHDA.jpg" width="150" height="100"></a>
+      
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#whymath">Why Math?</a>
+        <a href="onethird.html">Topics</a>
+          <ul hidden class="sub-menu">
+            <li><a href="onethird.html">0.3333...what?</a></li>
+            <li><a href="triangles.html"></a>Awesome Triangles</li>
+          </ul>
+        <a href="sample.html">Sample</a>
+        <a href="sample.html">Sample</a>
+
+      </nav>      
+    </header>
+      <main>
+        <article>
+          <section id="main-visual">
+            <div id="main-message">
+              <h1>Let's do math!</s></h1>
+              <p>Math is for everybody.</p>
+            </div>
+              <img src="images/banners/mathsymbols.jpg" width="600" height="400" style="display:block; margin-left:auto; margin-right: 0;">
+          </section>
+          <section id="whymath" class="content">
+            <h3 class="heading">Why Math?</h3>
+            <article class="post">
+              <p><img src="images/banners/inifinity.jpg" width="240" height="113" class="alignright"/><br>UN Blockchain Refugee ID</p>
+              <p><a href="https://www.unhcr.org/blogs/unhcr-accepting-proposals-digital-identity/" target="_blank" rel="noopener noreferrer">related news</a></p>
+            </article>
+          </section>
+        </article>
+      </main>
+
+      <!--余白を作りたい？ -->
+      <div id="blank-space">
+      </div>
+
+
+    <section hidden id="whymath" class="content">
+     <div> 
+      <h3 class="heading">Why Math?</h3>
+      <article class="post">
+        <p><img src="images/banners/inifinity.jpg" alt="" width="260" height="113" class="alignright"/>UN Blockchain Refugee ID</p>
+        <p><a href="https://www.unhcr.org/blogs/unhcr-accepting-proposals-digital-identity/" target="_blank" rel="noopener noreferrer">related news</a></p>
+      </article>
+     </div>
+    </section>
+
+
+  </body>
+
+  </html>
