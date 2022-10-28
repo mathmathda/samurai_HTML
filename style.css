@@ -59,7 +59,7 @@ PC用のスタイル
   }
 
    /* スマホ用ナビを非表示 */
-  #menu-sp {
+  #menu-sp, #nav-sp {
      display: none;
    }
   }
@@ -153,8 +153,8 @@ PC用のスタイル
   #sns > a {
     margin-right: 30px;
   } 
-
-  /* メインビジュアル */
+ 
+  /* メインビジュアル
   #main-visual {
     position: relative;
     height: 470px;
@@ -214,6 +214,10 @@ PC用のスタイル
    #whymathhelps {
      width: 100%;
    } 
+
+   .culture-img {
+    display: none;
+   } */
 }
 
 
